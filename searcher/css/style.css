@@ -1,0 +1,110 @@
+html,
+body,
+.main {
+	height: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	color: #666;
+	font-size: 14px;
+	font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+
+a {
+	color: #2AABD2;
+}
+
+.main {
+	min-width: 800px;
+	min-height: 583px;
+	width: 500px;
+	height: 300px;
+}
+
+.flex-box {
+	display: flex;
+	display: -webkit-box;
+	height: 50px;
+	border-bottom: 1px solid #eee;
+}
+
+.item {
+	-webkit-box-flex: 1;
+	border-left: 1px solid #eee;
+	width: 100%;
+	text-align: center;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	cursor: pointer;
+	transition-duration: 0.4s;
+}
+
+.item:hover {
+	color: #fff;
+	background-color: #26B7E0;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table td,
+table th {
+	height: 40px;
+	padding: 10px;
+	border: 1px solid #eee;
+}
+
+table td:first-child,
+table th:first-child {
+	border-left: 0;
+}
+
+table th:last-child,
+table td:last-child {
+	border-right: 0;
+}
+
+table tbody td {
+	text-align: center;
+}
+
+.btn {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	min-width: 80px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #26B7E0;
+	color: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+	outline: 0;
+}
+
+.btn.success {
+	background-color: #3FB53F;
+}
+
+.btn.danger {
+	background-color: #C5231E;
+}
+
+input,
+select {
+	height: 30px;
+	line-height: 30px;
+	padding: 5px 10px;
+	outline: 0;
+	font-size: 14px;
+	border: 1px solid #eee;
+}
