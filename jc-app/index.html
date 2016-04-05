@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/font.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+<div class="main">
+    <div class="flex-box nav">
+        <div class="flex-item" show="qrcode" default="1">
+            <i class='vsou vsou-qrcode'></i>
+        </div>
+        <div class="flex-item" show="tel">
+            Tel
+        </div>
+        <div class="flex-item" show="idcard">
+            身份证
+        </div>
+        <div class="flex-item" show="weather">
+            天气
+        </div>
+        <div class="flex-item" show="aqi">
+            空气指数
+        </div>
+        <div class="flex-item" show="happy">
+            每日一乐
+        </div>
+        <div class="flex-item" show="bus">
+            实时公交
+        </div>
+        <div class="flex-item" show="shorturl">
+            短连接
+        </div>
+        <div class="flex-item" show="robot">
+            聊天机器人
+        </div>
+        <div class="flex-item" show="ip">
+            ip查询
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-item qrcode">
+                <h3>二维码生成器</h3>
+                <div class="form">
+                    <input type="text" placeholder="内容" id="qrcode">
+                    <button type="button" class="btn" id="getqrcode">确定</button>
+                </div>
+                <div class="img-box">
+                    <img src="" id="qrcodeimg">
+                </div>
+        </div>
+        <div class="content-item tel">
+            <h3 class="text-center">手机号码查询</h3>
+            <div class="form">
+                <input type="tel" placeholder="手机号码" id="tel">
+                <button type="button" class="btn" id="gettel">确定</button>
+            </div>
+            <pre class="img-box" id="tel-txt"></pre>
+        </div>
+        <div class="content-item idcard">
+            <h3 class="text-center">身份证查询</h3>
+            <div class="form">
+                <input type="text" placeholder="身份证" id="idcard">
+                <button type="button" class="btn" id="getidcard">确定</button>
+            </div>
+            <pre class="img-box" id="idcard-txt"></pre>
+        </div>
+        <div class="content-item weather">
+            <h3 class="text-center">天气查询</h3>
+            <div class="form">
+                <input type="text" placeholder="城市" id="weather">
+                <button type="button" class="btn" id="getweather">确定</button>
+            </div>
+            <pre class="img-box" id="weather-txt"></pre>
+        </div>
+        <div class="content-item aqi">
+            <h3 class="text-center">空气指数查询</h3>
+            <div class="form">
+                <input type="text" placeholder="天气指数" id="aqi">
+                <button type="button" class="btn" id="getaqi">确定</button>
+            </div>
+            <pre class="img-box" id="aqi-txt"></pre>
+        </div>
+        <div class="content-item happy">
+            <h3 class="text-center">每日一乐</h3>
+            <div class="form">
+                <button type="button" class="btn" id="gethappy">笑一个</button>
+            </div>
+            <pre class="img-box" id="happy-txt"></pre>
+        </div>
+        <div class="content-item bus">
+            <h3 class="text-center">实时公交查询</h3>
+            <div class="form">
+                <input type="text" placeholder="城市:上海" id="bus_city">
+                <input type="text" placeholder="路线：浦东12路" id="bus_bus">
+                <select id="bus_direction">
+                    <option value="0">正向</option>
+                    <option value="1">反向</option>
+                </select>
+                <button type="button" class="btn" id="getbus">确定</button>
+            </div>
+            <pre class="img-box" id="bus-txt"></pre>
+        </div>
+        <div class="content-item shorturl">
+            <h3 class="text-center">短连接</h3>
+            <div class="form">
+                <input type="text" placeholder="url" id="shorturl">
+                <select id="shorturl_type">
+                    <option value="1">新浪短链接</option>
+                    <option value="2">百度短链接</option>
+                </select>
+                <button type="button" class="btn" id="getshorturl">确定</button>
+            </div>
+            <pre class="img-box" id="shorturl-txt"></pre>
+        </div>
+        <div class="content-item robot">
+            <div style="position: absolute;top: 0;left: 0;height: 80%;width: 100%;overflow: auto;">
+                <div id="msg-content">
+                </div>
+            </div>
+            <textarea style="resize: none;display: block;outline: 0;height: 20%;position: absolute;bottom: 0;left: 0;width: 100%;" id="getrobot"></textarea>
+        </div>
+        <div class="content-item ip">
+            <h3 class="text-center">ip查询</h3>
+            <div class="form">
+                <input type="text" placeholder="ip" id="ip">
+                <button type="button" class="btn" id="getip">确定</button>
+            </div>
+            <pre class="img-box" id="ip-txt"></pre>
+        </div>
+    </div>
+</div>
+<script src="js/vue.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

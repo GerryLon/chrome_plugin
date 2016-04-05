@@ -1,0 +1,156 @@
+html,
+body,
+.main {
+	height: 100%;
+}
+
+* {
+	box-sizing: border-box;
+	word-break:break-all;
+	word-wrap:break-word;
+}
+
+img[src='']{
+	display: none;
+}
+details{
+	outline: 0;
+}
+summary{
+	outline:0;
+	word-break:break-all;
+	word-wrap:break-word;
+}
+
+.text-red{
+	color:#f00;
+}
+
+body {
+	margin: 0;
+	color: #666;
+	font-size: 14px;
+	font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+
+a {
+	color: #2AABD2;
+}
+
+.main {
+	min-width: 800px;
+	min-height: 583px;
+}
+
+.flex-box {
+	display: flex;
+	display: -webkit-box;
+	height: 53px;
+}
+
+.flex-item {
+	-webkit-box-flex: 1;
+	width: 100%;
+	text-align: center;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	cursor: pointer;
+	transition-duration: 0.4s;
+}
+
+.flex-box.nav{
+	border-bottom:1px solid #eee;
+}
+
+.flex-box.nav .flex-item{
+	border-left:1px solid #eee;
+}
+
+.flex-200{
+	width:200px;
+}
+
+.content{
+	height: 530px;
+}
+.content-item{
+	height: 100%;
+	height: 100%;
+	display: none;
+	padding: 15px;
+	position: relative;
+}
+
+.form{
+	display: block;
+}
+
+.img-box{
+	width: 276px;
+	padding-top: 20px;
+}
+.img-box img{
+	display: block;
+	max-width: 100%;
+	box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table td,
+table th {
+	height: 40px;
+	padding: 10px;
+	border: 1px solid #eee;
+}
+
+table td:first-child,
+table th:first-child {
+	border-left: 0;
+}
+
+table th:last-child,
+table td:last-child {
+	border-right: 0;
+}
+
+table tbody td {
+	text-align: center;
+}
+
+.btn {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	min-width: 80px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #26B7E0;
+	color: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+	outline: 0;
+}
+
+.btn.success {
+	background-color: #3FB53F;
+}
+
+.btn.danger {
+	background-color: #C5231E;
+}
+
+input,
+select {
+	height: 30px;
+	line-height: 30px;
+	padding: 5px 10px;
+	outline: 0;
+	font-size: 14px;
+	border: 1px solid #eee;
+}

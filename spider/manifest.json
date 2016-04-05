@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "电影采集",
+    "version": "1.0",
+    "description": "电影采集插件",
+    "icons": {
+        "48": "images/ico.png"
+    },
+    "browser_action": {
+        "default_icon": "images/ico.png",
+        "default_title": "电影采集",
+        "default_popup": "index.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["js/content_scripts.js"]
+        }
+    ],
+    "permissions": ["<all_urls>"]
+}
